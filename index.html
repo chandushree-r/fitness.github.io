@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fitness Center</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Welcome to Fitness Center</h1>
+            <p>Your journey to a healthier lifestyle starts here!</p>
+            <a href="#services" class="btn btn-light mt-3">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>At Fitness Center, we are dedicated to helping you achieve your fitness goals with state-of-the-art equipment, professional trainers, and a supportive community. Join us to transform your life.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="gym.webp" alt="About us" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" style="background-color: lightcyan;" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <!-- Personal Training -->
+                <div class="col-md-4">
+                    <div class="card text-center" style="background-color:pink;"> <!-- Light gray background -->
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Training</h5>
+                            <p class="card-text">Get one-on-one coaching from our experienced trainers to reach your fitness goals faster.</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#personalTrainingList" aria-expanded="false" aria-controls="personalTrainingList">
+                                Learn More
+                            </button>
+                            <div class="collapse mt-3" id="personalTrainingList">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Custom Workout Plans</li>
+                                    <li class="list-group-item">Nutritional Guidance</li>
+                                    <li class="list-group-item">Progress Tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Group Classes -->
+                <div class="col-md-4">
+                    <div class="card text-center" style="background-color: lightseagreen;"> <!-- Light blue background -->
+                        <div class="card-body">
+                            <h5 class="card-title">Group Classes</h5>
+                            <p class="card-text">Join our group classes and enjoy a variety of workouts in a fun and energetic environment.</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#groupClassesList" aria-expanded="false" aria-controls="groupClassesList">
+                                Learn More
+                            </button>
+                            <div class="collapse mt-3" id="groupClassesList">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Yoga</li>
+                                    <li class="list-group-item">Zumba</li>
+                                    <li class="list-group-item">High-Intensity Interval Training (HIIT)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modern Equipment -->
+                <div class="col-md-4">
+                    <div class="card text-center" style="background-color: lightsalmon"> <!-- Light green background -->
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Equipment</h5>
+                            <p class="card-text">Access our top-notch equipment to perform a wide range of exercises effectively.</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#modernEquipmentList" aria-expanded="false" aria-controls="modernEquipmentList">
+                                Learn More
+                            </button>
+                            <div class="collapse mt-3" id="modernEquipmentList">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Treadmills</li>
+                                    <li class="list-group-item">Free Weights</li>
+                                    <li class="list-group-item">Resistance Machines</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact"  class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label" >Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" style="border: 2px solid red; border-radius: 4px;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" style="border: 2px solid darkcyan; border-radius: 4px;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your message" style="border: 2px solid darkmagenta; border-radius: 4px;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Fitness Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
